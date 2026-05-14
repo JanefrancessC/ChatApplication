@@ -4,7 +4,7 @@ let messageEl = document.getElementById("message");
 let displayBox = document.getElementById("display-message");
 let feedbackEl = document.getElementById("feedback");
 
-const url = `http://127.0.0.1:3000/messages`;
+const url = `https://janefrancessc-chat-application-backend.hosting.codeyourfuture.io/messages`;
 
 async function displayMessages() {
   try {
