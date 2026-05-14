@@ -6,7 +6,23 @@ app.use(cors());
 app.use(express.json());
 
 const port = 3000;
-const messages = [];
+const messages = [
+  {
+    message: "Hello",
+    user: "Jane",
+    time: Date.now() - 6000,
+  },
+  {
+    message: "Hey",
+    user: "John",
+    time: new Date() - 3000,
+  },
+  {
+    message: "Hi",
+    user: "Bob",
+    time: new Date(),
+  },
+];
 
 app.get("/", (req, res) => {
   res.json({ message: `Welcome to my Chat Application!` });
@@ -37,5 +53,5 @@ app.post("/messages", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.error(`Chat server listening on port ${port}`);
+  console.log(`Chat server listening on port ${port}`);
 });

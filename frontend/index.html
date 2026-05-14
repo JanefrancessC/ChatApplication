@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+  </head>
+  <body>
+    <header>
+      <h1>Chat App</h1>
+    </header>
+    <main>
+      <div>
+        <p id="feedback"></p>
+        <form id="send-message">
+          <label for="user"
+            >User:
+            <input type="text" name="user" id="user" required />
+          </label>
+          <label for="message"
+            >Enter your message:
+            <input type="text" name="message" id="message" required />
+          </label>
+          <button>Send Message</button>
+        </form>
+      </div>
+      <h2>Posts</h2>
+      <div id="display-message"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
